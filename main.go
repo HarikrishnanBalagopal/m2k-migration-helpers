@@ -7,9 +7,8 @@ import (
 	"os"
 	"path/filepath"
 
-	bolt "go.etcd.io/bbolt"
-
 	"github.com/sirupsen/logrus"
+	bolt "go.etcd.io/bbolt"
 )
 
 func migrateWorkspaces(metadataPath string, db *bolt.DB) {
